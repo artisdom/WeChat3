@@ -1,15 +1,30 @@
 /**index.wxss**/
 .flex-wrp{
   /* margin-top: 60rpx; */
-  display:flex; 
+  display:flex;  
+  justify-content: space-around; 
+  /* align-items: center; */
 }
-.flex-item{
+.flex-item{  
+  align-self: center;
   /* width: 200rpx; */
   /* height: 300rpx; */
   /* font-size: 26rpx; */
 }
-.flex-item-V{
-  margin: 0 auto;
-  width: 300rpx;
-  height: 200rpx;
+
+.flex-background-wrp{  
+  display:flex;  
+  justify-content: flex-start; 
+  /* align-items: center; */
+}
+.flex-background-item{  
+  align-self: center;
+  /* width: 200rpx; */
+  /* height: 300rpx; */
+  /* font-size: 26rpx; */
+}
+
+.tab{
+  display:flex;
+  justify-content: space-around;
 }

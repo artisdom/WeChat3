@@ -1,11 +1,26 @@
 {
-    "pages":[
-        "pages/index/index"
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "古大夫APP",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#353535",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      }
     ],
-    "window":{
-        "backgroundTextStyle":"light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "古大夫APP",
-        "navigationBarTextStyle":"black"
-    }
+    "position": "bottom"
+  }
 }

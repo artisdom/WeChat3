@@ -1,7 +1,32 @@
 <!--index.wxml-->
-<view class="section">
+<view class="icon-section">
   <view class="flex-wrp" style="flex-direction:row;">
-    <view class="flex-item logo"><image style="width: 50px; height: 50px; background-color: #eeeeee;" mode="aspectFit" class="image" src="../../image/logo.png"/></view>
-    <view class="flex-item search-box"><input class="weui-input" maxlength="100" placeholder="搜索商城、产品、专家" /></view>    
+    <view class="flex-item logo">
+      <image style="width: 200rpx; height: 150rpx;" mode="aspectFit" class="image" src="../../image/logo.png" />
+    </view>
+    <view class="flex-item search-box">
+      <input class="weui-input" maxlength="100" confirm-type="search" placeholder-style="color:grey; align:center;" placeholder="搜索商城、产品、专家" />
+    </view>
   </view>
+</view>
+
+<view class="background-section">
+  <view class="flex-background-wrp" style="flex-direction:column;">
+    <view class="flex-background-item background">
+      <image style="width: 750rpx; height: 280rpx;" mode="aspectFill" class="image" src="../../image/background.jpg" />
+    </view>
+    <view class="flex-background-item background-logo">
+      <image style="width: 750rpx; height: 80rpx; background-color: #17a361;" mode="aspectFit" class="image" src="../../image/logo.png" />
+    </view>
+  </view>
+</view>
+
+<view class="nav-warp">
+      <view class="tab">
+          <block wx:for="{{navItem}}" wx:key="index">
+              <text bindtap="navToggle" data-id="{{index}}" class="tab-txt {{showItem == index ? 'active' : '' }}">
+                  {{item}}
+              </text>
+          </block>
+      </view>
 </view>
